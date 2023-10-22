@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> SELAMAT HARI JADI NURHAWA </title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .tajuk {
+            background-color: #ffcc66;
+            padding: 25px;
+            border-radius: 15px;
+        }
+  .wish {
+    font-weight: Bold;
+    font-size: 20px;
+    font-family: 'Playpen Sans', cursive;
+  }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .tajuk {
+            font-size: 20px;
+            color: #FF5733;
+            animation: bounce 2s infinite;
+        }
+    </style>
+<body>
+        <h1 class="tajuk">&#10084;Happy Birthday Wa! &#10084;</h1>
+  <p class="wish">Turn 19 dh budak manja bongsu ni&#x1F604;.Hihi moga panjang umur dan dimurahkan rezeki selalu.Amin hehe.</p>
+  <script>
+        const text = document.querySelector('.wish');
+        const textContent = text.textContent;
+        text.textContent = '';
+
+        for (let i = 0; i < textContent.length; i++) {
+            setTimeout(() => {
+                text.textContent += textContent[i];
+                text.style.opacity = 1;
+            }, i * 100); // Adjust the delay (100 milliseconds) as needed for the desired speed.
+        }
+    </script>
+              <audio controls src= "birthday.mp3">
+</body>
+</head>
+</html>
